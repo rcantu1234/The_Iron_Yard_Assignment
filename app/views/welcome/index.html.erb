@@ -1,0 +1,11 @@
+<h3>Welcome to the Ironyard</h3>
+<p>The Best Code School in Town</p>
+
+<ul>
+  <% @ironyards.each do |ironyard| %>
+  <li>
+    <%= link_to ironyard.message, ironyard_path(ironyard) %> | <small>
+    <%= time_ago_in_words(ironyard.created_at) %> ago </small>
+  </li>
+  <% end %>
+</ul>

@@ -1,0 +1,2 @@
+module IronyardHelper
+end
