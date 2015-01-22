@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :campuses
+
   resources :ironyards
 
   root 'ironyards#index'

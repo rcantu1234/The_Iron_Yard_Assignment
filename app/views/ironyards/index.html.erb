@@ -12,8 +12,10 @@
   <tbody>
     <% @ironyards.each do |ironyard| %>
       <tr>
-        <td><%= ironyard.campusname %></td>
-        <td><%= ironyard.campuslocation %></td>
+        <td><%= ironyard.firstname %></td>
+        <td><%= ironyard.lastname %></td>
+        <td><%= ironyard.age %></td>
+        <td><%= ironyard.location %></td>
         <td><%= link_to 'Show', ironyard %></td>
         <td><%= link_to 'Edit', edit_ironyard_path(ironyard) %></td>
         <td><%= link_to 'Destroy', ironyard, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -1,0 +1,24 @@
+<%= form_for(@campuse) do |f| %>
+  <% if @campuse.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@campuse.errors.count, "error") %> prohibited this campuse from being saved:</h2>
+
+      <ul>
+      <% @campuse.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <fieldset class='field'>
+    <%= f.label :campusname, "Campus Name: " %><br>
+    <%= f.text_field :campusname %><br>
+    <%= f.label :campuslocation, "Campus Location: " %><br>
+    <%= f.text_field :campuslocation %><br>
+  </fieldset>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

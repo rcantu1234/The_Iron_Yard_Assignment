@@ -69,6 +69,6 @@ class IronyardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def ironyard_params
-      params[:ironyard]
+      params[:ironyard].permit(:firstname, :lastname, :age, :location)
     end
 end
