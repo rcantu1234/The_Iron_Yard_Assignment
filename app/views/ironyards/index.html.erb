@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Campuses</h1>
+<h1>Students Information</h1>
 
 <table>
   <thead>
@@ -16,6 +16,8 @@
         <td><%= ironyard.lastname %></td>
         <td><%= ironyard.age %></td>
         <td><%= ironyard.location %></td>
+        <td><%= ironyard.instructorsname %></td>
+        <td><%= ironyard.course %></td>
         <td><%= link_to 'Show', ironyard %></td>
         <td><%= link_to 'Edit', edit_ironyard_path(ironyard) %></td>
         <td><%= link_to 'Destroy', ironyard, method: :delete, data: { confirm: 'Are you sure?' } %></td>
