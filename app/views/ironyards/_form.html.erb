@@ -11,22 +11,22 @@
     </div>
   <% end %>
 
-    <fieldset class='field'>
-    <%= f.label :firstname, "First Name: " %><br>
+    <fieldset class='field table-format'>
+    <%= f.label :firstname, "First Name: " %>
     <%= f.text_field :firstname %><br>
-    <%= f.label :lastname, "Last Name: " %><br>
+    <%= f.label :lastname, "Last Name: " %>
     <%= f.text_field :lastname %><br>
-    <%= f.label :age, "Age: " %><br>
+    <%= f.label :age, "Age: " %>
     <%= f.text_field :age %><br>
-    <%= f.label :location, "Location: " %><br>
+    <%= f.label :location, "Location: " %>
     <%= f.text_field :location %><br>
-    <%= f.label :instructorsname, "Instructor Name: " %><br>
+    <%= f.label :instructorsname, "Instructor Name: " %>
     <%= f.text_field :instructorsname %><br>
-    <%= f.label :course, "Course: " %><br>
+    <%= f.label :course, "Course: " %>
     <%= f.text_field :course %><br>
   </fieldset>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Create " %>
   </div>
 <% end %>

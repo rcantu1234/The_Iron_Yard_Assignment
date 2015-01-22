@@ -28,7 +28,7 @@ class IronyardsController < ApplicationController
 
     respond_to do |format|
       if @ironyard.save
-        format.html { redirect_to @ironyard, notice: 'Ironyard was successfully created.' }
+        format.html { redirect_to @ironyard, notice: 'Student was successfully created.' }
         format.json { render :show, status: :created, location: @ironyard }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class IronyardsController < ApplicationController
   def update
     respond_to do |format|
       if @ironyard.update(ironyard_params)
-        format.html { redirect_to @ironyard, notice: 'Ironyard was successfully updated.' }
+        format.html { redirect_to @ironyard, notice: 'Student was successfully updated.' }
         format.json { render :show, status: :ok, location: @ironyard }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class IronyardsController < ApplicationController
   def destroy
     @ironyard.destroy
     respond_to do |format|
-      format.html { redirect_to ironyards_url, notice: 'Ironyard was successfully destroyed.' }
+      format.html { redirect_to ironyards_url, notice: 'Student was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

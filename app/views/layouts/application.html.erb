@@ -8,9 +8,16 @@
 </head>
 <body>
 
-<h1><%= link_to 'Iron Yard', root_path %></h1>
+<h1 class="welcome">Welcome to the Iron Yard</h1>
 
-<%= link_to "New Data", new_ironyard_path %>
+<div class="format">
+  <a href="#">Students</a>
+  <a href="#">Campuses</a>
+  <a href="#">Teachers</a>
+  <a href="#">Courses</a>
+</div>
+
+<br>
 
 <%= yield %>
 

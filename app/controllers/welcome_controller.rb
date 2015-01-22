@@ -4,5 +4,6 @@ class WelcomeController < ApplicationController
     @campuses = campse.all
     @students = student.all
     @teachers = teacher.all
+
   end
 end
