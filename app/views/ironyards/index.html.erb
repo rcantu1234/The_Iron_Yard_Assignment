@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Ironyards</h1>
+<h1>Listing Campuses</h1>
 
 <table>
   <thead>
@@ -12,10 +12,8 @@
   <tbody>
     <% @ironyards.each do |ironyard| %>
       <tr>
-        <td><%= user.firstname %></td>
-        <td><%= user.lastname %></td>
-        <td><%= user.age %></td>
-        <td><%= user.location %></td>
+        <td><%= ironyard.campusname %></td>
+        <td><%= ironyard.campuslocation %></td>
         <td><%= link_to 'Show', ironyard %></td>
         <td><%= link_to 'Edit', edit_ironyard_path(ironyard) %></td>
         <td><%= link_to 'Destroy', ironyard, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -26,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Ironyard', new_ironyard_path %>
+<%= link_to 'Menu', new_ironyard_path %>
