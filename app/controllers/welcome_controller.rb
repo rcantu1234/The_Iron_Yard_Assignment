@@ -3,5 +3,6 @@ class WelcomeController < ApplicationController
     @ironyards = ironyard.all
     @campuses = campse.all
     @students = student.all
+    @teachers = teacher.all
   end
 end
