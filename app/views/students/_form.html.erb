@@ -11,6 +11,15 @@
     </div>
   <% end %>
 
+      <fieldset class='field'>
+    <%= f.label :firstname, "First Name: " %><br>
+    <%= f.text_field :firstname %><br>
+    <%= f.label :lastname, "Last Name: " %><br>
+    <%= f.text_field :lastname %><br>
+    <%= f.label :address, "Address: " %><br>
+    <%= f.text_field :address %><br>
+  </fieldset>
+
   <div class="actions">
     <%= f.submit %>
   </div>
