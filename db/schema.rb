@@ -33,8 +33,11 @@ ActiveRecord::Schema.define(version: 20150122015637) do
   end
 
   create_table "students", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "firstname",  limit: 40, null: false
+    t.string   "lastname",   limit: 50, null: false
+    t.string   "address",    limit: 60, null: false
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
   end
 
 end
